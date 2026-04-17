@@ -1,0 +1,45 @@
+wing: workspace
+rooms:
+- name: analysis
+  description: Files from analysis/
+  keywords:
+  - analysis
+  - analysis
+- name: memory
+  description: Files from memory/
+  keywords:
+  - memory
+  - memory
+- name: research
+  description: Files from references/
+  keywords:
+  - research
+  - references
+- name: logs
+  description: Files from logs/
+  keywords:
+  - logs
+  - logs
+- name: scripts
+  description: Files from scripts/
+  keywords:
+  - scripts
+  - scripts
+- name: skills
+  description: Files from skills/
+  keywords:
+  - skills
+  - skills
+- name: backups
+  description: Files from backups/
+  keywords:
+  - backups
+  - backups
+- name: team
+  description: Files from people/
+  keywords:
+  - team
+  - people
+- name: general
+  description: Files that don't fit other rooms
+  keywords: []
