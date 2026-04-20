@@ -26,6 +26,9 @@
 - mcporter → 需 npm install -g mcporter
 - n8n → 需 N8N_API_KEY + N8N_BASE_URL
 
+**🆕 新安装：**
+- tvc-director → TVC广告创意导演（Nano Banana Pro关键帧 + Seedance视频脚本）
+
 ### 沟通渠道
 - **WhatsApp:** +8618822096032（当前活跃会话）
 - **飞书:** ou_13d5de76e62912757cd56fa20b10a358（已配对）
