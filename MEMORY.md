@@ -1,6 +1,6 @@
 # MEMORY.md — 长期记忆索引
 
-_Last updated: 2026-04-16_
+_Last updated: 2026-04-20_
 
 ---
 
@@ -96,13 +96,59 @@ memory/
 ├── YYYY-MM-DD.md          # 每日日记（自动创建）
 ├── MEMORY_INDEX.md        # 记忆索引
 ├── registry/              # 记忆标签注册
+├── optimization/          # 动态优化日志
+│   └── YYYY-MM-DD.md      # 每周优化报告
 └── projects/
     ├── sungiven.md
     ├── ai-consulting.md
     └── pr-plan.md
-references/
-└── (skill 大型参考文档)
+
+context_engine/            # Context Layer 架构
+├── Taxonomy.md            # 5层分类法 + Context Assembly Protocol
+├── MemoryProtocol.md      # 统一记忆协议
+├── DynamicOptimizer.md    # 指标 + 阈值 + 动态优化循环
+├── SessionHistoryCompression.md
+├── SkillContextBridge.md
+├── session_boot.py        # Context 组装脚本
+├── SessionBootTemplate.md # In-session MCP 协议
+├── KG_FactCatcher.md     # 会话内事实捕获协议
+├── metrics_logger.py      # 指标记录工具
+└── metrics_history.jsonl  # 指标历史
+
+harness_engineering/      # Harness Layer 架构
+├── BehavioralHarness.md   # Red Lines + Safety Checks
+├── ExecutionHarness.md    # Tool Sequencing + Error Recovery
+├── EvaluationHarness.md  # Pre-Output Quality Gate
+├── MetaCognitionHarness.md # Self-Knowledge + Assumption Tracking
+├── SelfOptimizationHarness.md # Monitor → Diagnose → Adjust → Verify
+└── index.md
 ```
+
+---
+
+## 🏗️ Context Layer 架构状态
+
+| 模块 | 版本 | 状态 |
+|------|------|------|
+| Context Taxonomy | 1.0 | ACTIVE |
+| Memory Protocol | 1.0 | ACTIVE |
+| Dynamic Optimizer | 1.0 | ACTIVE |
+| Session Compression | 1.0 | ACTIVE |
+| Skill Context Bridge | 1.0 | ACTIVE |
+
+详见：`context_engine/index.md`
+
+## ⚙️ Harness Layer 架构状态
+
+| 模块 | 版本 | 状态 |
+|------|------|------|
+| Behavioral Harness | 1.0 | ACTIVE |
+| Execution Harness | 1.0 | ACTIVE |
+| Evaluation Harness | 1.0 | ACTIVE |
+| Meta-Cognition Harness | 1.0 | ACTIVE |
+| Self-Optimization Harness | 1.0 | ACTIVE |
+
+详见：`harness_engineering/index.md`
 
 ---
 
