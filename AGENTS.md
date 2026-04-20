@@ -187,30 +187,34 @@ QUICK GATE (30 seconds):
 
 Before ending any session, execute:
 
+**Detailed protocol → `harness_engineering/self-optimization/SESSION_END.md`**
+
+Quick reference:
+
 ```
-1. LOG KEY METRICS:
-   python3 context_engine/metrics_logger.py --log session_context_satisfaction <1-5>
-   python3 context_engine/metrics_logger.py --log session_correction_rate <0-1>
-   python3 context_engine/metrics_logger.py --log tool_success_rate <0-1>
+1. LOG KEY METRICS (STEP 1):
+   → 评分：context_satisfaction / correction_rate / tool_success_rate
 
-2. CAPTURE SESSION FACTS (if significant):
-   - Any decisions made → KG via mempalace_kg_add
-   - Any new learnings → memory/YYYY-MM-DD.md
-   - Any issues encountered → memory/YYYY-MM-DD.md
+2. CAPTURE SESSION FACTS (STEP 2):
+   → 写入 improvement-tracker.md 的 Session 记录
 
-3. WRITE SESSION SUMMARY:
-   - Task worked on
-   - Key outcomes
-   - Issues noted
-   - Next steps
+3. 沉淀改进输入 (STEP 3):
+   → 问题写入 improvement-tracker.md → 🔴 未解决问题
+   → 已解决问题关闭 → ✅ 已关闭
+
+4. KG FLUSH (如有必要):
+   → 新事实立即写入 MemPalace KG
+
+5. UPDATE TODAY'S MEMORY:
    → memory/YYYY-MM-DD.md
-
-4. KG FACT CATCHER FLUSH:
-   - Execute all queued KG writes from this session
-   - Verify KG stats updated
 ```
 
-**Reference:** `harness_engineering/SelfOptimizationHarness.md`
+**配套文件：**
+- `self-optimization/SESSION_END.md` — 完整执行步骤
+- `self-optimization/improvement-tracker.md` — 问题追踪器
+- `self-optimization/auto-flag-triggers.md` — 自动标记触发点
+
+**Command:** `/session-end` 手动触发
 
 ## 🧠 Meta-Cognition Trigger
 
