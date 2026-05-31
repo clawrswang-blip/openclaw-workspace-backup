@@ -1,0 +1,3 @@
+Backup Date: 2026-05-31
+Backup Time: Sun May 31 00:00:01 PDT 2026
+Hostname: ClawdeMac-mini.local
